@@ -24,7 +24,7 @@ classifiers = [
 ]
 
 [tool.poetry.scripts]
-craft = "homestead.main:app"
+craft = "homestead.craft.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.10"

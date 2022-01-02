@@ -1,6 +1,6 @@
 import typer
 
-import module_commands
+from .commands import module_commands
 
 app = typer.Typer()
 
