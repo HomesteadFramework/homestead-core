@@ -124,6 +124,17 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 dev = ["pre-commit", "tox"]
 
 [[package]]
+name = "prompt-toolkit"
+version = "3.0.24"
+description = "Library for building powerful interactive command lines in Python"
+category = "main"
+optional = false
+python-versions = ">=3.6.2"
+
+[package.dependencies]
+wcwidth = "*"
+
+[[package]]
 name = "py"
 version = "1.11.0"
 description = "library with cross-python path, ini-parsing, io, code, log facilities"
@@ -178,6 +189,20 @@ wcwidth = "*"
 [package.extras]
 checkqa-mypy = ["mypy (==v0.761)"]
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
+
+[[package]]
+name = "questionary"
+version = "1.10.0"
+description = "Python library to build pretty command line user prompts ⭐️"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+
+[package.dependencies]
+prompt_toolkit = ">=2.0,<4.0"
+
+[package.extras]
+docs = ["Sphinx (>=3.3,<4.0)", "sphinx-rtd-theme (>=0.5.0,<0.6.0)", "sphinx-autobuild (>=2020.9.1,<2021.0.0)", "sphinx-copybutton (>=0.3.1,<0.4.0)", "sphinx-autodoc-typehints (>=1.11.1,<2.0.0)"]
 
 [[package]]
 name = "shellingham"
@@ -296,14 +321,14 @@ python-versions = ">=3.6"
 name = "wcwidth"
 version = "0.2.5"
 description = "Measures the displayed width of unicode strings in a terminal"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "493af3dfa3a51d498b49bd84902a7fcec8ae2f6cbcd4786f60de5ad45882fad9"
+content-hash = "f28e27a4ad215cc7c0a2ad1bb1e29bdd8fe0d8574c0bab6e5f459ae2098fea09"
 
 [metadata.files]
 anyio = [
@@ -403,6 +428,10 @@ pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
     {file = "pluggy-0.13.1.tar.gz", hash = "sha256:15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"},
 ]
+prompt-toolkit = [
+    {file = "prompt_toolkit-3.0.24-py3-none-any.whl", hash = "sha256:e56f2ff799bacecd3e88165b1e2f5ebf9bcd59e80e06d395fa0cc4b8bd7bb506"},
+    {file = "prompt_toolkit-3.0.24.tar.gz", hash = "sha256:1bb05628c7d87b645974a1bad3f17612be0c29fa39af9f7688030163f680bad6"},
+]
 py = [
     {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
     {file = "py-1.11.0.tar.gz", hash = "sha256:51c75c4126074b472f746a24399ad32f6053d1b34b68d2fa41e558e6f4a98719"},
@@ -451,6 +480,10 @@ pyparsing = [
 pytest = [
     {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},
     {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
+]
+questionary = [
+    {file = "questionary-1.10.0-py3-none-any.whl", hash = "sha256:fecfcc8cca110fda9d561cb83f1e97ecbb93c613ff857f655818839dac74ce90"},
+    {file = "questionary-1.10.0.tar.gz", hash = "sha256:600d3aefecce26d48d97eee936fdb66e4bc27f934c3ab6dd1e292c4f43946d90"},
 ]
 shellingham = [
     {file = "shellingham-1.4.0-py2.py3-none-any.whl", hash = "sha256:536b67a0697f2e4af32ab176c00a50ac2899c5a05e0d8e2dadac8e58888283f9"},

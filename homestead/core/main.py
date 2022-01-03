@@ -9,7 +9,7 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse, Response
 from starlette.routing import BaseRoute
 
-from homestead.core.utils.filesystem import get_file_path
+from homestead.utils.filesystem import get_file_path
 from homestead.core.routes import bootstrap as bootstrap_routes
 
 

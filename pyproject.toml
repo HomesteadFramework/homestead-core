@@ -31,6 +31,7 @@ python = "^3.10"
 fastapi = "^0.70.1"
 sqlmodel = "^0.0.6"
 typer = {extras = ["all"], version = "^0.4.0"}
+questionary = "^1.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
