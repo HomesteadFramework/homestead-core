@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "homestead"
-version = "0.1.0"
+version = "0.0.1"
 description = "Python \"framework\" built on top of several popular frameworks and tools such as FastAPI."
 authors = ["Brandon Braner <brandon.braner@gmail.com>"]
 license = "MIT"
