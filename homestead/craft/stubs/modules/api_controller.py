@@ -1,7 +1,9 @@
 from fastapi import Request
 from homestead import APIRouter
 
-router = APIRouter()
+router = APIRouter(
+    prefix="/{{module_name}}",
+)
 
 
 @router.get('/')
