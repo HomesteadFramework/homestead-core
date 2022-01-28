@@ -11,9 +11,13 @@ def init():
 
     project_dir = project_dir.rstrip('/')
     project_path = f"{project_dir}/{project_name}"
+    extra_context = {
+        "app_name": project_name,
+    }
     cookiecutter(
         'https://github.com/HomesteadFramework/cookiecutter.git',
-        output_dir=project_path
+        output_dir=project_path,
+        extra_context=extra_context,
     )
 
 

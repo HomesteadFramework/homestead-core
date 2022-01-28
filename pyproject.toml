@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "homestead"
-version = "0.0.1"
+version = "0.0.2"
 description = "Python \"framework\" built on top of several popular frameworks and tools such as FastAPI."
 authors = ["Brandon Braner <brandon.braner@gmail.com>"]
 license = "MIT"
@@ -32,6 +32,7 @@ fastapi = "^0.70.1"
 sqlmodel = "^0.0.6"
 typer = {extras = ["all"], version = "^0.4.0"}
 questionary = "^1.10.0"
+cookiecutter = "^1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
